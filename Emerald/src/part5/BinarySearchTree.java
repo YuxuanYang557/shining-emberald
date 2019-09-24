@@ -1,5 +1,7 @@
 package part5;
 
+import part1.Queue;
+
 public class BinarySearchTree<Key extends Comparable<Key>, Value> {
 
 	TreeNode root;
@@ -101,5 +103,29 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		return x;
 	}
 	
+	public Iterable<Key> keys(Key lo, Key hi){
+		Queue<Key> queue = new Queue<Key>();
+		keys(root,queue, lo, hi);
+		return queue;
+	}
+	private void keys(TreeNode x, Queue queue, Key lo, Key hi) {
+		if(x == null) return;
+		int cmplo = lo.compareTo(x.key);
+		int cmphi = hi.compareTo(x.key);
+		if(cmplo < 0) keys(x.left, queue, lo, hi);
+		if(cmplo <= 0 && cmphi >0) queue.push(x.key);
+		if(cmphi > 0) keys(x.right, queue, lo, hi);
+	}
+	
+	public int rankKey(Key key) {
+		return rankKey(root, key);
+	}
+	public int rankKey(TreeNode x, Key key) {
+		if(x == null) return 0;
+		int cmp = key.compareTo(x.key);
+		if(cmp < 0) return rankKey(x.left, key);
+		if(cmp > 0) return 1 + size(x.left) + rankKey(x.right, key);
+		else		return size(x.left);
+	}
 	
 }
