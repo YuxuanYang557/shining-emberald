@@ -1,4 +1,4 @@
-package part6;
+package LeetcodeDP;
 
 public class Backtrack1 {
 		public static void main(String[] args) {
