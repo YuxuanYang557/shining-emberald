@@ -1,4 +1,4 @@
-package LeetcodeDP;
+package leetcode.question.dynamicProgramming;
 
 public class Backtrack1 {
 		public static void main(String[] args) {

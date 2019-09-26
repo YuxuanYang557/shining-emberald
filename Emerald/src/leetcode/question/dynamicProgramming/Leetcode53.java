@@ -1,4 +1,4 @@
-package LeetcodeDP;
+package leetcode.question.dynamicProgramming;
 
 public class Leetcode53 {
 

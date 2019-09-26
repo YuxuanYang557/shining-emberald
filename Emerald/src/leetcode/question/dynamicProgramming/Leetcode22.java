@@ -1,4 +1,4 @@
-package LeetcodeDP;
+package leetcode.question.dynamicProgramming;
 
 import java.util.ArrayList;
 import java.util.List;
