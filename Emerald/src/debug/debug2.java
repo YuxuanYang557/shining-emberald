@@ -6,12 +6,10 @@ import java.util.List;
 import java.util.Queue;
 
 public class debug2 {
-	public static void main(String args[]) {
-		TreeNode root = new TreeNode(3);
-		levelOrder(root);
-	}
+
 	
-	  public class TreeNode {
+	
+	public class TreeNode {
 		     int val;
 		     TreeNode left;
 		     TreeNode right;
