@@ -4,6 +4,9 @@ public class debug1 {
 		public static void main(String[] args) {
 			int[] ttt = {4,2,3};
 			trap(ttt);
+			String str;
+			
+			
 		}
 
 	    public static int trap(int[] height) {
