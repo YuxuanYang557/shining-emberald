@@ -3,6 +3,9 @@ package leetcode.question.array;
 public class Leetcode189 {
 	
 	//method1 rotate the element in place
+	//1.reverse the whole array
+	//2.reverse the left K part
+	//3.reverse the right K part
 	public void rotate(int[] nums, int k) {
 		rotateNums(nums, 0, nums.length -1);
 		rotateNums(nums, 0, k);
@@ -31,4 +34,5 @@ public class Leetcode189 {
 			nums[j] = nums2[nums.length -k +j];
 		}
 	}
+
 }

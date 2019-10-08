@@ -1,7 +1,7 @@
 package leetcode.question.binaryTree;
 
 import java.util.Stack;
-
+//Symmetric tree 
 public class Leetcode101 {
 
 	  public class TreeNode {
@@ -15,6 +15,8 @@ public class Leetcode101 {
 		return root == null || isSymmetric1(root.left, root.right);
 	}
 	public boolean isSymmetric1(TreeNode left, TreeNode right) {
+		//if one of them is null then right == left will return false
+		//if both of them is null then return true
 		if(right == null || left == null) {
 			return right == left;
 		}

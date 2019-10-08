@@ -2,9 +2,10 @@ package debug;
 
 public class debug1 {
 		public static void main(String[] args) {
-			int[] ttt = {4,2,3};
-			trap(ttt);
-			String str;
+			int [] test = new int[3];
+			char[] test2 = new char[3];
+			boolean[] test3 = new boolean[3];
+			System.out.print(test3[0]);
 			
 			
 		}
