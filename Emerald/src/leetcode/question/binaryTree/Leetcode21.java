@@ -1,5 +1,6 @@
 package leetcode.question.binaryTree;
 
+//merge two sorted list
 public class Leetcode21 {
 	public class ListNode {
 			     private int val;
@@ -7,6 +8,7 @@ public class Leetcode21 {
 			     private ListNode(int x) { val = x; }
 	}
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+	
 		  if(l1 == null) return l2;
 		  if(l2 == null) return l1;
 		  if(l1.val < l2.val) {

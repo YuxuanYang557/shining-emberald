@@ -1,5 +1,6 @@
 package leetcode.question.binaryTree;
 
+//odd even linked list
 public class Leetcode328 {
 
 	  public class ListNode {
@@ -11,10 +12,13 @@ public class Leetcode328 {
 	    if(head == null) return null;
 	    ListNode odd = head;
 	    ListNode even = head.next;
+	    //a extra pointer to mark the head of the even linked list.
 	    ListNode evenHead = even;
 	    while(even != null && even.next != null){
+	    		//iter through the odd nodes
 	        odd.next = even.next;
 	        odd = odd.next;
+	        //iter through the even nodes
 	        even.next = odd.next;
 	        even = even.next;
 	    }

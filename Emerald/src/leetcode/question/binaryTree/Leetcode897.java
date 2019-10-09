@@ -9,6 +9,8 @@ public class Leetcode897 {
 		private TreeNode(int x) { val = x; }
 		 }
 
+	//if want generate a new tree and return the head
+	//should have two pointer: head and iteration node !!!
     TreeNode cur;
     public TreeNode increasingBST(TreeNode root) {
         TreeNode node = new TreeNode(0);

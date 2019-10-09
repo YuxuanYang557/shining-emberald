@@ -15,7 +15,7 @@ public class Leetcode138 {
 	        random = _random;
 	    }
 	};
-	
+	 //copy the linked list
 	 public Node copyRandomList(Node head) {
 	        Node next = head;
 	        Node iter = head;
@@ -25,7 +25,7 @@ public class Leetcode138 {
 	            iter.next.next = next;
 	            iter = next;
 	        }
-	        
+	        //copy the linked list with random pointer
 	        iter = head;
 	        while(iter != null){
 	            if(iter.random != null)
